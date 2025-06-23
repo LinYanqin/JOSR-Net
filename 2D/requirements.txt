@@ -1,0 +1,7 @@
+tensorflow==1.14.0
+scipy==1.5.4
+tensorlayer==1.7.2
+keras==2.2.4
+numpy==1.16.2
+h5py==2.10.0
+nmrglue==0.7
