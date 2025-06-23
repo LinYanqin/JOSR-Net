@@ -152,7 +152,7 @@ The detailed options in `main_4channel.py` are following:
           - `inputreal2.mat`: Undersampled data (shape:[direct_dim_size, indirect_dim_size1, indirect_dim_size2, 2] - I1R2 and I1I2)
           - `factor1.mat`: Normalization factor data for `inputreal1.mat` (shape: [1, direct_dim_size]) 
           - `factor2.mat`: Normalization factor data for `inputreal2.mat` (shape: [1, direct_dim_size])
-          - `mask3D.mat`: Sampling mask data (shape:[direct_dim_size, indirect_dim_size1. indirect_dim_size2])
+          - `mask3D.mat`: Sampling mask data (shape:[indirect_dim_size1. indirect_dim_size2])
    - Option B (Undersampled Data):
      1. Run `Matlab_process/preprocess_nus.m` in MATLAB.
      2. This script will convert the undersampled data into the same network input format (`inputreal1.mat`,`inputreal2.mat`,`factor1.mat`,`factor2.mat`,`mask3D.mat`).
