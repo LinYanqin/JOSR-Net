@@ -16,7 +16,7 @@ rec1_out = factor'.*rec1_complex;
 max_rec1 = max(real(rec1_out(:)));
 res1=rec1_out/max_rec1;
 
-level = 10;
+level = 8;
 figure,contour(abs(label_f),level);title('label')
 figure,contour(abs(res1),level);title('JOSR-Net')
 RLNE_JOSR = norm(real(res1(:))-real(label_f(:)))/norm(real(label_f(:)))
