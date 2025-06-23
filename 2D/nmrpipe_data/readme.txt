@@ -1,1 +1,0 @@
-the path is store nmrpipe data
