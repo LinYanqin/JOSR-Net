@@ -35,18 +35,14 @@ for i = 1:z_axis
     factor2(1,i) = f;
     input_real2(i,:,:,:) = under;
 end
-label_name = strcat(filepath,'label_3D.mat');
 input_name1 = strcat(filepath,'inputreal',num2str(1),'.mat');
 input_name2 = strcat(filepath,'inputreal',num2str(2),'.mat');
 factor_name1 = strcat(filepath,'factor',num2str(1),'.mat');
 factor_name2 = strcat(filepath,'factor',num2str(2),'.mat');
 mask_name = strcat(filepath,'mask3D.mat');
 
-fid = permute(fid,[2,1,3]);
-
 save(input_name1,'input_real1');
 save(input_name2,'input_real2');
 save(factor_name1,'factor1');
 save(factor_name2,'factor2');
 save(mask_name,'mask');
-save(label_name,'fid');
