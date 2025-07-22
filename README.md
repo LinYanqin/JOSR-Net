@@ -113,7 +113,7 @@ The detailed options in `main_4channel.py` are following:
 ## Key Workflow Sequence
 ### For 1D model
 1. Set `rec=False` in the `inference.py` file, and run `inference.py`. This will generate a sampling mask.
-2. Prerequisite: Place your NMR data file (either a fully sampled FID in nmrPipe format or an already zero-filled undersampled FID) in the directory `test/BMRB_data/`.
+2. Prerequisite: Place your NMR data file (either a fully sampled FID in nmrPipe format or an already zero-filled undersampled FID) in the directory `test/BMRB_data/`. And then name the file with `test.fid`, which serves as the input of `ft1.com`.
 3. Preprocess NMR data:
    1. Navigate to the data directory: `cd test/BMRB_data/`.
    2. Modify the `ft1.com` file: Adjust the direct dimension's phase correction and chemical shift range as needed.
@@ -136,7 +136,7 @@ The detailed options in `main_4channel.py` are following:
    - If you started with undersampled data (Option B in Step 5), you must modify the `filename` in `Matlab_process/test_BMRB.m` to point to the corresponding fully sampled data (Matlab format) file path, or comment out the first 8 lines of `Matlab_process/test_BMRB.m`.
 ### For 2D model
 1. Set `rec=False` in the `inference_4channel.py` file, and run `inference_4channel.py`. This will generate a sampling mask.
-2. Prerequisite: Place your NMR data file (either a fully sampled FID in nmrPipe format or an already zero-filled undersampled FID) in the directory `Processed_data/BMRB_data/`.
+2. Prerequisite: Place your NMR data file (either a fully sampled FID in nmrPipe format or an already zero-filled undersampled FID) in the directory `Processed_data/BMRB_data/`. And then name the folder with `data`, which serves as the input of `process_direct.com`.
 3. Preprocess NMR data:
    1. Navigate to the data directory: `cd Processed_data/BMRB_data/`.
    2. Modify the `process_direct.com` file: Adjust the direct dimension's phase correction and chemical shift range as needed.
