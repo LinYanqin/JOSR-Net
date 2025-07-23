@@ -110,7 +110,7 @@ The detailed options in `main_4channel.py` are following:
 - `DPS_rows and DPS_cols` is the indirect dimension of the data.
 - `data_path` is the path of 2D dataset.
 
-## Key Workflow Sequence
+## Key Workflow Sequence (For the setting of parameters in each script, please refer to the section of "Reproduce The Results In The Paper")
 ### For 1D model
 1. Set `rec=False` in the `inference.py` file, and run `inference.py`. This will generate a sampling mask.
 2. Prerequisite: Place your NMR data file (either a fully sampled FID in nmrPipe format or an already zero-filled undersampled FID) in the directory `test/BMRB_data/`. And then name the file with `test.fid`, which serves as the input of `ft1.com`.
